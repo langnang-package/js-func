@@ -1,4 +1,5 @@
-import { random } from "./random";
+import {random_int} from "./random_int";
+
 /**
  * 生成随机九宫格数独
  */
@@ -14,8 +15,8 @@ export const random_sudoku = (items: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]) => {
     result[i] = row.slice((i % 3) * 3).concat(row.slice(0, (i % 3) * 3));
   }
   let i = 0;
-  while (i < random() * 10000) {
-    let rc1: number = Math.floor(random(9));
+  while (i < random_int() * 10000) {
+    let rc1: number = random_int(9);
     let rc2: number = rc1;
     switch (rc1 % 3) {
       case 0:
@@ -30,7 +31,7 @@ export const random_sudoku = (items: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]) => {
       default:
         break;
     }
-    if (random() > 0.5) {
+    if (Math.random() > 0.5) {
       [result[rc1], result[rc2]] = [result[rc2], result[rc1]];
     } else {
       for (let i = 0; i < 9; i++) {
