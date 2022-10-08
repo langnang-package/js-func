@@ -1,4 +1,4 @@
-export const arrayJoin = (array: any[], separator: string = ",") => {
+export const array_join = (array: any[], separator: string = ",") => {
   let prefix = "[",
     suffix = "]";
   for (let i = 0; i <= array.length - 1; i++) {
