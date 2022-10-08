@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/langnang-temp/javascript.git"
+    "url": "git+https://github.com/langnang-package/js-func.git"
   },
   "keywords": [
     "javascript",
@@ -38,9 +38,9 @@
     "langnang"
   ],
   "author": "Langnang",
-  "license": "Apache-2.0 license",
+  "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/langnang-temp/javascript/issues"
+    "url": "https://github.com/langnang-package/js-func/issues"
   },
-  "homepage": "https://github.com/langnang-temp/javascript#readme"
+  "homepage": "https://langnang-package.github.io/langnang-package/function/"
 }
