@@ -10,13 +10,13 @@ interface ajaxOption {
   error: any;
 }
 
-export const ajax = (option: ajaxOption) => {
+export const ajax = (option: any) => {
   // 创建xhr对象，兼容写法
   var xhr = window.XMLHttpRequest
     ? new XMLHttpRequest()
     : new ActiveXObject("Microsoft.XMLHTTP");
 
-  let { method, url, params, success } = option;
+  let {method, url, params, success} = option;
   // 将method转换成大写
   method = method.toUpperCase();
   // 参数拼接
