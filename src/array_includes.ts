@@ -11,8 +11,6 @@ import { array_index } from "./array_index";
  * @reference https://underscorejs.net/#contains
  */
 export const array_includes = (array: any[], value: any, from_index: number = 0): boolean => {
-
-
   if (from_index >= array.length) return false;
 
   from_index = from_index < 0 ? array.length + from_index : from_index;

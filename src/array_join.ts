@@ -1,11 +1,19 @@
+/**
+ * @name array_join
+ * @description 将数组中的所有元素转换为由 `separator` 分隔的字符串。
+ * @param {Array} array 需要处理的数组。
+ * @param {String} separator 分隔元素。
+ * @returns {String} 所有数组元素连接的字符串。
+ * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+ * @reference https://www.lodashjs.com/docs/lodash.join
+ */
 export const array_join = (array: any[], separator: string = ",") => {
-  let prefix = "[",
-    suffix = "]";
-  for (let i = 0; i <= array.length - 1; i++) {
-    prefix += array[i];
+  let result: string = "";
+  for (let i: number = 0; i <= array.length - 1; i++) {
+    result += array[i];
     if (i < array.length - 1) {
-      prefix += separator;
+      result += separator;
     }
   }
-  return prefix + suffix;
+  return result;
 };
