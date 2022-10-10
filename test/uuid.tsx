@@ -1,4 +1,4 @@
-import {uuid} from "../src/uuid";
+import { uuid } from "../main";
 
 describe("uuid", () => {
   it("uuid", () => {

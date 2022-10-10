@@ -1,4 +1,4 @@
-import {is_array} from "../src/is_array";
+import { is_array } from "../main";
 
 describe("is_array", () => {
   it('main', function () {

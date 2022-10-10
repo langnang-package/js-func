@@ -1,4 +1,4 @@
-import { array_find } from "../src/array_find";
+import { array_find } from "../main";
 
 describe("array_find", () => {
   it("MDN: 用对象的属性查找数组里的对象", () => {

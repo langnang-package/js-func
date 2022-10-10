@@ -1,6 +1,6 @@
-import { array_filter } from './../src/array_filter'
+import { array_filter } from '../main'
 
-describe("function_name", () => {
+describe("array_filter", () => {
   it("main", () => { });
   it("MDN: 筛选排除所有较小的值", () => {
     expect(array_filter([12, 5, 8, 130, 44], (value: any) => value > 10)).toEqual([12, 130, 44]);

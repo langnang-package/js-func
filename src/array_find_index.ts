@@ -13,7 +13,7 @@
  * @reference https://www.lodashjs.com/docs/lodash.findIndex
  * @reference https://underscorejs.net/#findIndex
  */
-export const array_find_index = (array: any[], predicate: any, form_index: number = 0, thisArg: any = null) => {
+export const array_find_index = (array: any[], predicate: any, form_index: number = 0, this_arg: any = null) => {
   form_index = (form_index < 0 || form_index > array.length) ? 0 : form_index;
   for (let i = form_index; i < array.length; i++) {
     if (predicate(array[i], i, array)) {

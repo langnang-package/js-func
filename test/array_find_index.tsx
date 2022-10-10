@@ -1,4 +1,4 @@
-import { array_find_index } from '../src/array_find_index'
+import { array_find_index } from '../main'
 
 describe("array_find_index", () => {
   it("main", () => { });

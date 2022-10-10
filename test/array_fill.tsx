@@ -1,4 +1,4 @@
-import { array_fill } from "../src/array_fill";
+import { array_fill } from "../main";
 
 describe("array_fill", () => {
   it("MDN", () => {

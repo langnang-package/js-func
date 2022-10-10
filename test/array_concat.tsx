@@ -1,4 +1,4 @@
-import { array_concat } from "../src/array_concat";
+import { array_concat } from "../main";
 
 describe("array_concat", () => {
   it("MDN: 连接两个数组", () => {

@@ -1,15 +1,15 @@
 /**
  * @name array_duplicate
- * @description 取重复值
- * @param {Array} array
- * @returns {Array}
+ * @description 返回数组中的重复值。
+ * @param {Array} array 需要处理的数组。
+ * @returns {Array} 由重复值组成的新数组
  */
 
 export const array_duplicate = (array: any[]): any[] => [
   ...new Set(
     array.reduce(
-      (acc, val, index) =>
-        array.indexOf(val, index + 1) >= 0 ? acc.concat(val) : acc,
+      (total, current_value, current_index) =>
+        array.indexOf(current_value, current_index + 1) >= 0 ? total.concat(current_value) : total,
       []
     )
   ),

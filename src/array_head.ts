@@ -1,24 +1,31 @@
 /**
  * @name head
- * @description 数组的前n个元素
- * @param {Array} arr
+ * @description 获取数组的前 `n` 个元素。
+ * @param {Array} array 需要处理的数组。
+ * @param {Number} [n = 1] 获取的元素个数
+ * @returns {Array}
+ * @reference https://www.lodashjs.com/docs/lodash.head
+ * @reference
  */
 import { array_slice } from "./array_slice";
-export const array_head = (array: any[], n = 1, mode = "prototype") => {
-  if (n == 1) return array[0];
-
-  let _map = new Map();
-  _map.set("prototype", (array: any[], n = 1) => array.slice(0, n));
-  _map.set("_prototype", (array: any[], n = 1) => array_slice(array, 0, n));
-  _map.set("for", (array: any[], n = 1) => {
-    let _head = [];
-    for (let i = 0; i <= n - 1; i++) {
-      _head[i] = array[i];
-    }
-    return _head;
-  });
-
-  if (!_map.has(mode)) mode = "prototype";
-
-  return _map.get(mode)(array, n);
+export const array_head = (array: any[], n: number = 1) => {
+  if (n <= 1) return array[0];
+  if (n >= array.length) return [...array];
+  return array_slice(array, 0, n);
 };
+
+export const array_head_by_for = (array: any[], n: number = 1) => {
+  if (n <= 1) return array[0];
+  if (n >= array.length) return [...array];
+  let result = [];
+  for (let i = 0; i <= n - 1; i++) {
+    result[i] = array[i];
+  }
+  return result;
+}
+
+export const array_head_by_proto = (array: any[], n: number = 1) => {
+  if (n <= 1) return array[0];
+  if (n >= array.length) return [...array];
+  return array.slice(0, n);
+}

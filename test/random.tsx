@@ -1,4 +1,4 @@
-import {random} from "../src/random";
+import { random } from "../main";
 
 describe("random", () => {
   it('main', function () {
