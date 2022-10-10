@@ -1,3 +1,20 @@
 import { array_index } from "./array_index";
-export const array_includes = (array: any[], valueToFind: any, fromIndex: number = 0): boolean =>
-  array_index(array, valueToFind, fromIndex) > -1;
+/**
+ * @name array_includes
+ * @description 判断数组是否包含一个指定的值，如果包含则返回 true，否则返回 false。
+ * @param {Array} array 需要处理的数组。
+ * @param {*} value 需要查找的元素值。
+ * @param {Number} [from_index = 0] 起始索引，默认值为 0。
+ * @returns {Boolean} 检测结果
+ * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+ * @reference https://www.lodashjs.com/docs/lodash.includes
+ * @reference https://underscorejs.net/#contains
+ */
+export const array_includes = (array: any[], value: any, from_index: number = 0): boolean => {
+  if (from_index >= array.length) return false;
+
+  from_index = from_index < 0 ? array.length + from_index : from_index;
+
+  return array_index(array, value, from_index) > -1;
+
+}
