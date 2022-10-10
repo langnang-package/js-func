@@ -1,13 +1,15 @@
 /**
+ * @name array_duplicate
  * @description 取重复值
- * @param {*} arr
+ * @param {Array} array
+ * @returns {Array}
  */
 
-export const array_duplicate = (arr: any[]): any[] => [
+export const array_duplicate = (array: any[]): any[] => [
   ...new Set(
-    arr.reduce(
+    array.reduce(
       (acc, val, index) =>
-        arr.indexOf(val, index + 1) >= 0 ? acc.concat(val) : acc,
+        array.indexOf(val, index + 1) >= 0 ? acc.concat(val) : acc,
       []
     )
   ),

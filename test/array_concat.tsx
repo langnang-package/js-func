@@ -1,10 +1,16 @@
-import {array_concat} from "../src/array_concat";
+import { array_concat } from "../src/array_concat";
 
 describe("array_concat", () => {
-  it("concat array", () => {
-    expect(array_concat([], [1])).toEqual([1])
-    expect(array_concat([], [1], [undefined])).toEqual([1, undefined])
-    expect(array_concat([], [1], [undefined], [null])).toEqual([1, undefined, null])
-    expect(array_concat([], [1], [undefined], [null, {}])).toEqual([1, undefined, null, {}])
+  it("MDN: 连接两个数组", () => {
+    expect(array_concat(['a', 'b', 'c'], [1, 2, 3])).toEqual(['a', 'b', 'c', 1, 2, 3])
+  })
+  it("MDN: 连接三个数组", () => {
+    expect(array_concat([1, 2, 3], [4, 5, 6], [7, 8, 9])).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9])
+  })
+  it("MDN: 将值连接到数组", () => {
+    expect(array_concat(['a', 'b', 'c'], 1, [2, 3])).toEqual(['a', 'b', 'c', 1, 2, 3])
+  })
+  it("MDN: 合并嵌套数组", () => {
+    expect(array_concat([[1]], [2, [3]])).toEqual([[1], 2, [3]])
   })
 })
