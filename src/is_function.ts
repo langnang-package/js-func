@@ -1,5 +1,5 @@
 /**
- * @name isFunction
+ * @name is_function
  * @desc 判断是否是函数
  * @param {*} object
  * @return {Boolean}
