@@ -2,6 +2,7 @@
  * 返回对象的数据类型
  * @param {*} object
  */
+// TODO
 export const object_type = (object: any): string =>
   Object.prototype.toString
     .call(object)

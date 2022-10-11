@@ -1,9 +1,10 @@
+import { object_type } from "./object_type";
 /**
  * 检测DOM
  * @param {*} el
  */
 
-import { object_type } from "./object_type";
+// TODO
 export const is_dom = (object: any) =>
   object_type(HTMLElement) === "object"
     ? object instanceof HTMLElement

@@ -6,8 +6,8 @@ import { _from_index } from "./_form_index";
  * @param {Number} [begin = 0] 开始位置。
  * @param {Number} [end = array.length] 结束位置。
  * @returns {Array} 返回数组裁剪部分的新数组。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
- * @reference https://www.lodashjs.com/docs/lodash.slice
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+ * @tutorial https://www.lodashjs.com/docs/lodash.slice
  */
 export const array_slice = (array: any[], begin: number = 0, end: number = array.length) => {
   // 如果提取起始处索引为负数，则表示从原数组中倒数第几个元素开始提起

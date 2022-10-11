@@ -4,8 +4,8 @@
  * @param {Array} array 需要处理的数组。
  * @param {String} separator 分隔元素。
  * @returns {String} 所有数组元素连接的字符串。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join
- * @reference https://www.lodashjs.com/docs/lodash.join
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join
+ * @tutorial https://www.lodashjs.com/docs/lodash.join
  */
 export const array_join = (array: any[], separator: string = ",") => {
   let result: string = "";

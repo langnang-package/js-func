@@ -9,9 +9,9 @@
  * @param {Number} form_index 开始搜索的索引位置。
  * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {*} 数组中第一个满足所提供测试函数的元素的值，否则返回 `-1`
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
- * @reference https://www.lodashjs.com/docs/lodash.findIndex
- * @reference https://underscorejs.net/#findIndex
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex
+ * @tutorial https://www.lodashjs.com/docs/lodash.findIndex
+ * @tutorial https://underscorejs.net/#findIndex
  */
 export const array_find_index = (array: any[], predicate: any, form_index: number = 0, this_arg: any = null) => {
   form_index = (form_index < 0 || form_index > array.length) ? 0 : form_index;

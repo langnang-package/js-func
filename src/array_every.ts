@@ -8,9 +8,9 @@
  * * @param {Array} array 数组本身。
  * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {Boolean} 如果所有元素通过 `predicate` 断言函数检测后都返回真值，那么就返回 `true`，否则返回 `false` 。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every
- * @reference https://www.lodashjs.com/docs/lodash.every
- * @reference https://underscorejs.net/#every
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+ * @tutorial https://www.lodashjs.com/docs/lodash.every
+ * @tutorial https://underscorejs.net/#every
  */
 export const array_every = (array: any[], predicate: any, this_arg: any = null) => {
   for (let key in array) {

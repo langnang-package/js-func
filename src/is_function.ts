@@ -5,5 +5,6 @@
  * @return {Boolean}
  * @date 2019-07-06
  */
+// TODO
 export const is_function = (object: any) =>
   Object.prototype.toString.call(object) === "[object Function]";

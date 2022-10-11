@@ -4,7 +4,7 @@ import { array_push } from "./array_push";
  * @description 返回一个包含数组中每个索引键的数组。
  * @param {Array} array 需要处理的数组。
  * @returns 一个新的数组对象。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/keys
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/keys
  */
 export const array_keys = (array: any[]) => {
   let result: any[] = [];

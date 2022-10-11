@@ -9,9 +9,9 @@
  * * @param {Array} array 数组本身。
  * @param {*} initial_value 作为第一次调用 `iteratee` 函数时参数 `previous_value` 的值。
  * @returns {Array} 使用 `iteratee` 迭代函数遍历整个数组后的结果。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
- * @reference https://www.lodashjs.com/docs/lodash.reduce
- * @reference https://underscorejs.net/#reduce
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
+ * @tutorial https://www.lodashjs.com/docs/lodash.reduce
+ * @tutorial https://underscorejs.net/#reduce
  */
 export const array_reduce = (array: any[], iteratee: any, initial_value: any = array[0]) => {
   for (let i = 0; i <= array.length - 1; i++) {

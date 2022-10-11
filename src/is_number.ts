@@ -4,6 +4,7 @@
  * @param {*} object
  * @return {Boolean}
  */
+// TODO
 export const is_number = (object: any) =>
   Object.prototype.toString.call(object) === "[object Number]" &&
   Number.isFinite(object) &&

@@ -1,3 +1,4 @@
+// TODO
 export const mobile_type = () => {
   var u = navigator.userAgent
   var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1 // g

@@ -3,6 +3,7 @@
  * @param {Array} sudoku
  * @returns {Boolean} 
  */
+// TODO
 export const verify_sudoku = (sudoku: any[]) => {
   return verify_sudoku_row(sudoku) && verify_sudoku_col(sudoku) && verify_sudoku_block(sudoku)
 };

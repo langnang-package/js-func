@@ -3,6 +3,7 @@
  * @param {Array} array 
  * @returns {Array}
  */
+// TODO
 export const quick_sort = (array: any[]) => {
   // 引用传递
   let _array = array.slice(0);

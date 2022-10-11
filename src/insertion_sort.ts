@@ -6,6 +6,7 @@
  * @date 2019-07-06 
  */
 
+// TODO
 export const insertion_sort = (array: any[]) => {
   const insertion = (array: any[], index: number) => {
     // 从后向前遍历

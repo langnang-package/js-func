@@ -5,6 +5,7 @@
  */
 
 // module.exports = arr => arr.reduce((acc, val) => acc > val, arr[0])
+// TODO
 export const is_array_sorted = (arr: any[]) => {
   let direction = -(arr[0] - arr[1]);
   for (let [i, val] of arr.entries()) {

@@ -6,9 +6,9 @@ import { array_index } from "./array_index";
  * @param {*} value 需要查找的元素值。
  * @param {Number} [from_index = 0] 起始索引，默认值为 0。
  * @returns {Boolean} 检测结果
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
- * @reference https://www.lodashjs.com/docs/lodash.includes
- * @reference https://underscorejs.net/#contains
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/includes
+ * @tutorial https://www.lodashjs.com/docs/lodash.includes
+ * @tutorial https://underscorejs.net/#contains
  */
 export const array_includes = (array: any[], value: any, from_index: number = 0): boolean => {
   if (from_index >= array.length) return false;

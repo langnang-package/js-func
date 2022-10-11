@@ -5,11 +5,11 @@ import { is_array } from "./is_array";
  * @param {Array} array 需要处理的数组
  * @param {Number} [depth = 1] 指定要提取嵌套数组的结构深度，默认值为 1。0：不提取，-1：提取所有深度。
  * @returns {Array} 一个包含将数组与子数组中所有元素的新数组。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
- * @reference https://www.lodashjs.com/docs/lodash.flatten
- * @reference https://www.lodashjs.com/docs/lodash.flattenDeep
- * @reference https://www.lodashjs.com/docs/lodash.flattenDepth
- * @reference https://underscorejs.net/#flatten
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/flat
+ * @tutorial https://www.lodashjs.com/docs/lodash.flatten
+ * @tutorial https://www.lodashjs.com/docs/lodash.flattenDeep
+ * @tutorial https://www.lodashjs.com/docs/lodash.flattenDepth
+ * @tutorial https://underscorejs.net/#flatten
  */
 
 export const array_flat = (array: any[], depth: number = 1): any[] => {

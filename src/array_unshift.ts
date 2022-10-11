@@ -4,7 +4,7 @@
  * @param {Array} array 需要处理的数组 
  * @param {...*} values 被添加到数组末尾的元素。
  * @returns {Number} 返回数组的长度
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift 
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift 
  */
 export const array_unshift = (array: any[], ...values: any): number => {
   let merge_array = [...values, ...array];

@@ -6,8 +6,7 @@
  * @date 2019-07-06 
  * @todo Maximum call stack size exceeded,堆栈溢出
  */
-
-
+// TODO
 export const merge_sort = (array: any[]): any[] => {
   if (array.length < 2) return array;
   const merge = (left: any[], right: any[]) => {

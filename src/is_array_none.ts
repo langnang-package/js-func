@@ -5,4 +5,5 @@
  * @param {*} fn
  */
 
+// TODO
 export const is_array_none = (array: any[], fn = Boolean) => !array.every(fn);

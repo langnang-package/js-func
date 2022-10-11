@@ -4,6 +4,7 @@
  * @param {number} originalB
  * @return {number}
  */
+// TODO
 export const euclidean = (originalA: number, originalB: number): number => {
   const a = Math.abs(originalA);
   const b = Math.abs(originalB);

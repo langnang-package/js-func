@@ -1,6 +1,7 @@
 /**
  * AJAX 请求封装
  */
+// TODO
 interface ajaxOption {
   method: string;
   url: string;

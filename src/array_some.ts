@@ -8,8 +8,8 @@
  * * @param {Array} array 数组本身。
  * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {Boolean} 如果存在元素通过 `predicate` 断言函数检测后返回真值，那么就返回 `true`，否则返回 `false` 。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some
- * @reference https://www.lodashjs.com/docs/lodash.some
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+ * @tutorial https://www.lodashjs.com/docs/lodash.some
  */
 export const array_some = (array: any[], predicate: Function, this_arg: any = null) => {
   for (let key in array) {

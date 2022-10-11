@@ -8,8 +8,8 @@
  * * @param {Array} array 数组本身。
  * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {Object} 返回一个组成集合对象。
- * @reference https://www.lodashjs.com/docs/lodash.countBy
- * @reference https://underscorejs.net/#countBy
+ * @tutorial https://www.lodashjs.com/docs/lodash.countBy
+ * @tutorial https://underscorejs.net/#countBy
  */
 export const array_count = (array: any[], iteratee: any = null, this_arg: any = null): any => {
   let result = iteratee ? array.map(iteratee) : [...array];

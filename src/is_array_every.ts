@@ -4,4 +4,5 @@
  * @param {*} fn
  */
 
+// TODO
 export const is_array_every = (array: any[], fn = Boolean) => array.every(fn);

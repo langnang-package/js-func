@@ -5,8 +5,7 @@
  * @return {Array}
  * @date 2019-07-06 
  */
-
-
+// TODO
 export const selectionSort = (array: any[]) => {
   // 选择:将未排序部分中最小值移至已排序部分末尾
   const selection = (array: any[], start: number) => {

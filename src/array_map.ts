@@ -9,9 +9,9 @@ import { array_push } from "./array_push";
  * * @param {Array} array 数组本身。
  * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {Array} 根据 `iteratee`（迭代函数）遍历所有元素返回的结果所组成新的数组。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map
- * @reference https://www.lodashjs.com/docs/lodash.map
- * @reference https://underscorejs.net/#map
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+ * @tutorial https://www.lodashjs.com/docs/lodash.map
+ * @tutorial https://underscorejs.net/#map
  */
 export const array_map = (array: any[], iteratee: any, this_arg: any = null) => {
   let result: any[] = [];

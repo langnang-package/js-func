@@ -4,8 +4,8 @@
  * @param {Array} array 需要处理的数组。
  * @param {Number} [n = 1] 获取的元素个数
  * @returns {Array}
- * @reference https://www.lodashjs.com/docs/lodash.head
- * @reference
+ * @tutorial https://www.lodashjs.com/docs/lodash.head
+ * @tutorial
  */
 import { array_slice } from "./array_slice";
 export const array_head = (array: any[], n: number = 1) => {

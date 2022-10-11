@@ -8,8 +8,8 @@
  * * @param {Array} array 数组本身。
  * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {*} 返回数组执行遍历的次数，一般为数组的长度。
- * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
- * @reference https://www.lodashjs.com/docs/lodash.forEach
+ * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+ * @tutorial https://www.lodashjs.com/docs/lodash.forEach
  */
 export const array_foreach = (array: any[], iteratee: any, this_arg: any = null) => {
   let len: number = 0;

@@ -4,5 +4,6 @@
  * @param {*} object
  * @return {Boolean}
  */
+// TODO
 export const is_symbol = (object: any) =>
   Object.prototype.toString.call(object) === "[object Symbol]";
