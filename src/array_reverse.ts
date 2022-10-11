@@ -1,15 +1,15 @@
 /**
- * 反转数组
- * @param {Array} array
+ * @name array_reverse
+ * @description 反转数组，将数组中元素的位置颠倒，并返回该数组。此方法更改原始数组。
+ * @param {Array} array 需要处理的数组。
+ * @returns {Array} 反转后的数组。
+ * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse
+ * @reference https://www.lodashjs.com/docs/lodash.reverse
  */
 export const array_reverse = (array: any[]) => {
-  let _array = [];
-  let index = 0;
-  let indexOfSource = array.length - 1;
-  while (indexOfSource >= 0) {
-    _array[index] = array[indexOfSource];
-    index++;
-    indexOfSource--;
+  let count: number = Math.floor(array.length / 2);
+  for (let i = 0; i <= count - 1; i++) {
+    [array[i], array[array.length - 1 - i]] = [array[array.length - 1 - i], array[i]];
   }
-  return _array;
+  return array;
 };
