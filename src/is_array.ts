@@ -1,8 +1,8 @@
 /**
  * @name is_array
- * @desc 检测是否为数组
+ * @description 检测对象是否为数组类型
  * @param {*} object 需要检测的对象
+ * @returns {Boolean} 检测结果
  */
-// TODO
-export const is_array = (object: any) =>
+export const is_array = (object: any): boolean =>
   Object.prototype.toString.call(object) === "[object Array]";

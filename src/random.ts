@@ -1,7 +1,8 @@
 /**
- * 返回随机值
- * @param {Number} num 随机值范围，默认为1
- * @returns Number
+ * @name random
+ * @description 生成随机数值
+ * @param {Number} [max = 1] 随机数值最大范围，默认为1
+ * @param {Number} [min = 0] 随机数值最小范围，默认为1
+ * @returns {Number} 随机数值
  */
-// TODO
-export const random = (max: number = 1, min: number = 0) => Math.random() * (max - min) + min;
+export const random = (max: number = 1, min: number = 0): number => Math.random() * (max - min) + min;

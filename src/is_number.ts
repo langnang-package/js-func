@@ -1,12 +1,7 @@
 /**
- * @name isNumber
- * @desc 判断是否是数字
- * @param {*} object
- * @return {Boolean}
+ * @name is_number
+ * @description 检测对象是否为数值类型
+ * @param {*} object 需要检测的对象
+ * @returns {Boolean} 检测结果
  */
-// TODO
-export const is_number = (object: any) =>
-  Object.prototype.toString.call(object) === "[object Number]" &&
-  Number.isFinite(object) &&
-  !Number.isNaN(object) &&
-  typeof object === "number";
+export const is_number = (object: any): boolean => Object.prototype.toString.call(object) === "[object Number]" 

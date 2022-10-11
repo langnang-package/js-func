@@ -1,8 +1,10 @@
 import { random } from "./random";
+
 /**
- * 返回随机整数
- * @param {Number} num 随机值范围，默认为1
- * @returns {Number}
+ * @name random_int
+ * @description 生成随机整数数值
+ * @param {Number} [max = 1] 随机值最大范围，默认为1
+ * @param {Number} [min = 0] 随机值最小范围，默认为1
+ * @returns {Number} 随机整数数值
  */
-// TODO
-export const random_int = (max: number = 1, min: number = 0) => Math.floor(random(max, min));
+export const random_int = (max: number = 1, min: number = 0): number => Math.floor(random(max, min));

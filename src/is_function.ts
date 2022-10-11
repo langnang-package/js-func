@@ -1,10 +1,8 @@
 /**
  * @name is_function
- * @desc 判断是否是函数
- * @param {*} object
- * @return {Boolean}
- * @date 2019-07-06
+ * @description 检测对象是否为函数类型
+ * @param {*} object 需要检测的对象
+ * @returns {Boolean} 检测结果
  */
-// TODO
 export const is_function = (object: any) =>
   Object.prototype.toString.call(object) === "[object Function]";
