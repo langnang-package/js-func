@@ -1,10 +1,8 @@
 /**
- * @name isUndefined
- * @desc 判断是否是Undefined
- * @param {*} object
- * @return {Boolean}
+ * @name is_undefined
+ * @description 检测对象是否为 `Undefined`
+ * @param {*} object 需要检测的对象
+ * @returns {Boolean} 检测结果
  */
-
-// TODO
 export const is_undefined = (object: any) =>
   Object.prototype.toString.call(object) === "[object Undefined]";
