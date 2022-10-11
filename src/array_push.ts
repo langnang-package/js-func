@@ -6,7 +6,7 @@
  * @returns {Number} 返回数组的长度
  * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/push 
  */
-export const array_push = (array: any[], ...values: any) => {
+export const array_push = (array: any[], ...values: any): number => {
   for (let i in values) {
     array[array.length] = values[i];
   }

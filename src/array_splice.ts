@@ -1,51 +1,28 @@
-export const array_splice = (array: any[], start = 0, deleteCount = 0, ...items: any) => {
-  /**
-   * array =
-   *      [0, start - 1]
-   *      + [start, start + deleteCount)
-   *      + [start + deleteCount, array.length - 1]
-   * return =
-   *      [0, start)
-   *      + [start, start + items.length - 1)
-   *      + [start + deleteCount, array.length - 1]
-   */
-  let _array = [];
-  let index = 0;
-  let delArray = [];
-  let delIndex = 0;
-  for (let i = 0; i <= array.length - 1; i++) {
-    // 提取索引小于start的元素
-    if (i <= start - 1) {
-      _array[index] = array[i];
-      index++;
-    }
-    // 插入元素
-    else if (i == start) {
-      for (let j = 0; j <= items.length - 1; j++) {
-        _array[index] = items[j];
-        index++;
-      }
-      // 当删除的元素数为0时，将索引为start的值插入数组
-      if (deleteCount == 0) {
-        _array[index] = array[start];
-        index++;
-      }
-      // 当删除的元素数不为0时，将索引为start的值插入删除元素的数组
-      else {
-        delArray[delIndex] = array[start];
-        delIndex++;
-      }
-    } else if (i <= start + deleteCount) {
-      delArray[delIndex] = array[i];
-      delIndex++;
-    }
-    // 过滤掉索引介于start与start+deleteCount之间的元素
-    // 提取索引大于start+deleteCount的元素
-    else if (i > start + deleteCount) {
-      _array[index] = array[i];
-      index++;
-    }
+import { _from_index } from "./_form_index";
+import { array_slice } from "./array_slice";
+import { array_push } from "./array_push";
+/**
+ * @name array_splice
+ * @description 通过删除或替换现有元素或者原地添加新的元素来修改数组，并以数组形式返回被修改的内容。此方法会改变原数组。
+ * @param {Array} array 需要处理的数组。
+ * @param {Number} [start = 0] 指定修改的开始位置（从 0 计数）。
+ * @param {Number} [delete_count = array.length - start] 表示要移除的数组元素的个数。
+ * @param {...*} values 要添加进数组的元素，从start 位置开始。如果不指定，则 splice() 将只删除数组元素。
+ * @returns 由被删除的元素组成的一个数组。
+ * @reference https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+ */
+export const array_splice = (array: any[], start = 0, delete_count = array.length - start, ...values: any) => {
+  start = _from_index(array.length, start);
+  let delete_array: any[] = [];
+  // 删除元素
+  for (let i = 0; i < delete_count; i++) {
+    array_push(delete_array, array[i + start]);
+    delete (array[i + start]);
   }
-  array = _array;
-  return delArray;
+  // 添加元素
+  let rest_array = [...values, ...array_slice(array, start + delete_count)];
+  for (let i = 0; i < rest_array.length; i++) {
+    array[i + start] = rest_array[i];
+  }
+  return delete_array;
 };
