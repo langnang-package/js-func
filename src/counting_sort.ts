@@ -1,8 +1,8 @@
 /**
- * @name countingSort
+ * @name counting_sort
  * @desc 计数排序
  */
-export const counting_sort = (array: any[]) => {
+export const counting_sort = (array: any[]): any[] => {
   let min = Math.min(...array);
   let max = Math.max(...array);
   let B = Array();

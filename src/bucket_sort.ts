@@ -1,8 +1,8 @@
 /**
- * @name bucketSort
+ * @name bucket_sort
  * @desc 桶排序
  */
-export const bucketSort = (array: any[]) => {
+export const bucket_sort = (array: any[]): any[] => {
   // 声明一个空桶, 将数据压入桶中
   const bucket = new Array(Math.max(...array) + 1);
   bucket.fill(0);
