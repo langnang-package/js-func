@@ -1,12 +1,18 @@
 /**
- * @name mergeSort
- * @desc 归并排序
- * @param {Array} array
- * @return {Array}
- * @date 2019-07-06 
- * @todo Maximum call stack size exceeded,堆栈溢出
+ * 算法原理
+ * 1. 把长度为 n 的输入序列分成两个长度为 n/2 的子序列；
+ * 2. 对这两个子序列分别采用归并排序；
+ * 3. 将两个排序好的子序列合并成一个最终的排序序列。
  */
-// TODO
+/**
+ * @name merge_sort
+ * @description 归并排序。递归分割序列,比较合并已排序序列。
+ * @param {Array} array 需要处理的数组。
+ * @param {Function} iteratee 每次迭代调用的函数。
+ * * @param {*} a 第一个用于比较的元素。
+ * * @param {*} b 第二个用于比较的元素。
+ * @returns {Array} 排序后的数组。
+ */
 export const merge_sort = (array: any[]): any[] => {
   if (array.length < 2) return array;
   const merge = (left: any[], right: any[]) => {

@@ -1,7 +1,8 @@
 /**
- * 检测正则
- * @param {*} object
+ * @name is_regexp
+ * @description 检测对象是否为 `RegExp` 类型
+ * @param {*} object 需要检测的对象
+ * @returns {Boolean} 检测结果
  */
-// TODO
 export const is_regexp = (object: any) =>
   Object.prototype.toString.call(object) === "[object RegExp]";
