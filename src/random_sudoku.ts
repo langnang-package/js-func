@@ -1,9 +1,11 @@
 import { random_int } from "./random_int";
+// TODO
 
 /**
- * 生成随机九宫格数独
+ * @name random_sudoku
+ * @description 生成随机九宫格数独
+ * @syntax ;
  */
-// TODO
 export const random_sudoku = (items: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]) => {
   let result: any[] = [];
   for (let i = 0; i < 9; i++) {

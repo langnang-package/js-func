@@ -1,8 +1,10 @@
 /**
  * @name array_join
  * @description 将数组中的所有元素转换为由 `separator` 分隔的字符串。
+ * @tag Array 数组
+ * @syntax array_join(array, [separator = ","]);
  * @param {Array} array 需要处理的数组。
- * @param {String} separator 分隔元素。
+ * @param {String} [separator = ","] 分隔元素。
  * @returns {String} 所有数组元素连接的字符串。
  * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/join
  * @tutorial https://www.lodashjs.com/docs/lodash.join

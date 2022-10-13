@@ -1,6 +1,8 @@
 /**
  * @name array_reduce
  * @description 遍历数组元素，每一次运行 `iteratee` 迭代函数会将先前元素的计算结果作为参数传入，最后将其结果汇总为单个返回值。
+ * @tag Array 数组
+ * @syntax array_reduce(array, iteratee(element, value, array), initial_value);
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} previous_value 上一次调用 `iteratee` 时的返回值。
@@ -13,7 +15,7 @@
  * @tutorial https://www.lodashjs.com/docs/lodash.reduce
  * @tutorial https://underscorejs.net/#reduce
  */
-export const array_reduce = (array: any[], iteratee: any, initial_value: any = array[0]) => {
+export const array_reduce = (array: any[], iteratee: any, initial_value: any) => {
   for (let i = 0; i <= array.length - 1; i++) {
     initial_value = iteratee(initial_value, array[i], i, array);
   }

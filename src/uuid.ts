@@ -1,6 +1,7 @@
 /**
  * @name uuid
  * @description 生成随机通用唯一标识符（Universally Unique Identifier）
+ * @syntax ;
  * @returns {String} 通用唯一标识符
  */
 export const uuid = () =>

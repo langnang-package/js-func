@@ -1,7 +1,9 @@
 import { is_array } from "./is_array";
 /**
  * @name array_flat
- * @desc 按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。
+ * @description 按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回。
+ * @tag Array 数组
+ * @syntax array_flat(array, [depth = 1]);
  * @param {Array} array 需要处理的数组
  * @param {Number} [depth = 1] 指定要提取嵌套数组的结构深度，默认值为 1。0：不提取，-1：提取所有深度。
  * @returns {Array} 一个包含将数组与子数组中所有元素的新数组。

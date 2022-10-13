@@ -2,6 +2,8 @@ import { array_push } from "./array_push";
 /**
  * @name array_filter
  * @description 过滤数组，并将符合条件（返回 `true`）的数组元素放进一个新数组中并返回。
+ * @tag Array 数组
+ * @syntax array_filter(array, predicate(element, index, array));
  * @param {Array} array 需要处理的数组。
  * @param {Function} predicate 每次迭代调用的函数。
  * * @param {*} element 当前遍历到的元素。

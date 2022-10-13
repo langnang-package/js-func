@@ -8,6 +8,10 @@
 /**
  * @name counting_sort
  * @description 计数排序。取最大值和最小值,统计元素出现次数,计数累加,反向填充输出。
+ * @tag Array 数组
+ * @tag Algorithm 算法
+ * @tag Sorting 排序
+ * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

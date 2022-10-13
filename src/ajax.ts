@@ -1,6 +1,3 @@
-/**
- * AJAX 请求封装
- */
 // TODO
 interface ajaxOption {
   method: string;
@@ -10,7 +7,10 @@ interface ajaxOption {
   success: any;
   error: any;
 }
-
+/**
+ * AJAX 请求封装
+ * @param {*} option 
+ */
 export const ajax = (option: any) => {
   // // 创建xhr对象，兼容写法
   // // var xhr = window.XMLHttpRequest

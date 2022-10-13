@@ -1,6 +1,8 @@
 /**
  * @name array_count
  * @description 遍历数组，计数统计使用 `iteratee` 迭代函数处理每个元素后返回结果的出现次数
+ * @tag Array 数组
+ * @syntax array_count(array, [iteratee = null, [this_arg = null]);
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee 每次迭代调用的函数。
  * * @param {*} element 当前遍历到的元素。

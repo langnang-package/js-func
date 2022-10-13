@@ -7,6 +7,10 @@
 /**
  * @name merge_sort
  * @description 归并排序。递归分割序列,比较合并已排序序列。
+ * @tag Array 数组
+ * @tag Algorithm 算法
+ * @tag Sorting 排序
+ * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

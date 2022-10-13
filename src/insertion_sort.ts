@@ -10,6 +10,10 @@
 /**
  * @name insertion_sort
  * @description 插入排序。默认第一个元素为已排序,取未排序部分第一个元素,从后向前进行比较交换位置。
+ * @tag Array 数组
+ * @tag Algorithm 算法
+ * @tag Sorting 排序
+ * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

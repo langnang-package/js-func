@@ -1,6 +1,8 @@
 /**
  * @name array_duplicate
  * @description 返回数组中的重复值。
+ * @tag Array 数组
+ * @syntax array_duplicate(array);
  * @param {Array} array 需要处理的数组。
  * @returns {Array} 由重复值组成的新数组
  */

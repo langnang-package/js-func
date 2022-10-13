@@ -7,6 +7,10 @@
 /**
  * @name selection_sort
  * @description 选择排序。重复遍历未排序部分,将最小元素移至已排序末尾。
+ * @tag Array 数组
+ * @tag Algorithm 算法
+ * @tag Sorting 排序
+ * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

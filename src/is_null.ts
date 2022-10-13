@@ -1,6 +1,7 @@
 /**
  * @name is_null
  * @description 检测对象是否为 `Null`
+ * @syntax ;
  * @param {*} object 需要检测的对象
  * @returns {Boolean} 检测结果
  */

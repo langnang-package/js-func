@@ -8,6 +8,10 @@
 /**
  * @name bucket_sort
  * @description 桶排序。设置桶范围,遍历数据至对应的桶中,对非空桶进行排序后拼接
+ * @tag Array 数组
+ * @tag Algorithm 算法
+ * @tag Sorting 排序
+ * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

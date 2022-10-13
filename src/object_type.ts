@@ -1,6 +1,7 @@
 /**
  * @name object_type
  * @description 检测对象的数据类型
+ * @syntax ;
  * @param {*} object 需要检测的对象
  * @returns {String} 对象的数据类型
  */

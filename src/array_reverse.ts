@@ -1,6 +1,8 @@
 /**
  * @name array_reverse
  * @description 反转数组，将数组中元素的位置颠倒，并返回该数组。此方法更改原始数组。
+ * @tag Array 数组
+ * @syntax array_reverse(array);
  * @param {Array} array 需要处理的数组。
  * @returns {Array} 反转后的数组。
  * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse

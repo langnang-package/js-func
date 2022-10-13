@@ -4,6 +4,8 @@ import { array_push } from "./array_push";
 /**
  * @name array_splice
  * @description 通过删除或替换现有元素或者原地添加新的元素来修改数组，并以数组形式返回被修改的内容。此方法会改变原数组。
+ * @tag Array 数组
+ * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {Number} [start = 0] 指定修改的开始位置（从 0 计数）。
  * @param {Number} [delete_count = array.length - start] 表示要移除的数组元素的个数。

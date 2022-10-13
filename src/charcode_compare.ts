@@ -1,6 +1,7 @@
 /**
  * @name charcode_compare
  * @description 比较两个元素的 Unicode 编码大小
+ * @syntax ;
  * @param {*} a 第一个元素
  * @param {*} b 第二个元素
  * @returns {Number} 返回比较结果。0：相等，1：a>b，-1：a<b;
