@@ -158,6 +158,7 @@ module.exports = [
                       href: "",
                       src: `@langnang/js-func/src/${name}.ts`,
                       path: `@/src/${name}.ts`,
+                      source: `https://github.com/langnang-package/js-func/blob/master/src/${name}.ts`,
                     },
                     ...get_realizes(comments),
                   ];
@@ -228,7 +229,7 @@ module.exports = [
                       resolve(resolve(__dirname, `../../../test/${name}.tsx`))
                     )
                   ) {
-                    content += `\r\r**示例**\r\n\n\`@langnang/js-func/test/${name}.tsx\`\r\n\n<<< @/test/${name}.tsx\r\n`;
+                    content += `\r\r**示例**\r\n\n[\`@langnang/js-func/test/${name}.tsx\`](https://github.com/langnang-package/js-func/blob/master/test/${name}.tsx)\r\n\n<<< @/test/${name}.tsx\r\n`;
                   }
 
                   if (comments["@tutorial"]) {
@@ -255,83 +256,18 @@ module.exports = [
                     .reduce(
                       (t, v, i) =>
                         t +
-                        `\r\n<template v-slot:${name}_${i}>\r\n\r\n${
+                        `\r\n<template v-slot:${name}_${i}>\r\n\r\n[${
                           v.src ? `\`${v.src}\`` : ""
-                        }\r\n\r\n${
+                        }](${v.source})\r\n\r\n${
                           v.path ? `<<< ${v.path}` : ""
                         }\r\n\r\n</template>\r\n`,
                       ""
                     );
 
                   content += `\r\n</CodeSwitcher>`;
-                  `<CodeSwitcher :languages="{${name}_0:'Langnang.${name}'}">
-
-<template v-slot:${name}_0>
-
-\`@langnang/js-func/src/${name}.ts\`
-
-<<< @/src/${name}.ts
-
-</template>
-
-</CodeSwitcher>`;
 
                   // console.log(content);
                   return content;
-                  return `## ${name}
-
-${comments["@description"][0].join(" ")}
-
-${tags.reduce(
-  (t, v) => t + `![${v[1]}](https://img.shields.io/badge/-${v[0]}-blue)\n`,
-  ""
-)}
-
-**语法**
-
-\`\`\`js
-${page.frontmatter.syntax}
-\`\`\`
-
-**参数**
-
-${params.reduce(
-  (t, v) =>
-    t + `- \`${v[1]}\`_${v[0].replace("{", "(").replace("}", ")")}_: ${v[2]}\n`,
-  ""
-)}
-
-
-**返回值**
-
-_${returns[0][0].replace("{", "(").replace("}", ")")}_: ${returns[0][1]}
-
-
-**示例**
-
-\`@langnang/js-func/test/${name}.tsx\`
-
-<<< @/test/${name}.tsx
-
-**参考**
-
-${tutorials.reduce((t, v) => t + `- ${v[0]}\n`, "")}
-
-**实现**
-
-<CodeSwitcher :languages="{${name}_0:'Langnang.${name}'}">
-
-<template v-slot:${name}_0>
-
-\`@langnang/js-func/src/${name}.ts\`
-
-<<< @/src/${name}.ts
-
-</template>
-
-</CodeSwitcher>
-
-`;
                 })
                 .join("\n\n")
             );
@@ -427,6 +363,7 @@ ${tutorials.reduce((t, v) => t + `- ${v[0]}\n`, "")}
                   if (/developer\.mozilla\.org/.test(href)) {
                     item.module = "MDN";
                     item.href = href;
+                    item.source = ``;
                     item.text = `${href.split("/")[9]}.prototype.${
                       href.split("/")[10]
                     }() - JavaScript | MDN`;
@@ -439,6 +376,7 @@ ${tutorials.reduce((t, v) => t + `- ${v[0]}\n`, "")}
                       .trim();
                     item.path = `@/node_modules/lodash/${item.fn}.js`;
                     item.src = `lodash/${item.fn}.js`;
+                    item.source = `https://github.com/lodash/lodash/blob/master/${item.fn}.js`;
                     item.text = `lodash.${item.fn} | Lodash`;
                     t.push(item);
                   } else if (/underscorejs\.net/.test(href)) {
@@ -449,6 +387,7 @@ ${tutorials.reduce((t, v) => t + `- ${v[0]}\n`, "")}
                       .trim();
                     item.path = `@/node_modules/underscore/modules/${item.fn}.js`;
                     item.src = `underscore/modules/${item.fn}.js`;
+                    item.source = `https://github.com/jashkenas/underscore/tree/master/modules/${item.fn}.js`;
                     item.text = `underscore.${item.fn} | Underscore`;
                     t.push(item);
                   }
