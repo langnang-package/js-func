@@ -6,7 +6,7 @@
  * @tag Sorting 排序
  * @tip 算法原理 tip 1. 把长度为 n 的输入序列分成两个长度为 n/2 的子序列；\n2. 对这两个子序列分别采用归并排序；\n3. 将两个排序好的子序列合并成一个最终的排序序列。\n
  * @param {Array} array 需要处理的数组。
- * @param {Function} iteratee 每次迭代调用的函数。
+ * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。
  * * @param {*} b 第二个用于比较的元素。
  * @returns {Array} 排序后的数组。

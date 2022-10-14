@@ -6,7 +6,7 @@
  * @tag Sorting 排序
  * @tip 算法原理 tip 1. 找出待排序的数组中最大和最小的元素；\n2. 统计数组中每个值为 i 的元素出现的次数，存入数组 C 的第 i 项；\n3. 对所有的计数累加（从 C 中的第一个元素开始，每一项和前一项相加）；\n4. 反向填充目标数组：将每个元素 i 放在新数组的第 C(i)项，每放一个元素就将 C(i)减去 1。\n
  * @param {Array} array 需要处理的数组。
- * @param {Function} iteratee 每次迭代调用的函数。
+ * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。
  * * @param {*} b 第二个用于比较的元素。
  * @returns {Array} 排序后的数组。

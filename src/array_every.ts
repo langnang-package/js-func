@@ -4,7 +4,7 @@
  * @tip 这个方法对于对于空集合返回 true，因为空集合的任何元素都是 `true` 。
  * @tag Array 数组
  * @param {Array} array 需要处理的数组。
- * @param {Function} predicate 每次迭代调用的函数。
+ * @param {*} predicate(element, index, array) 每次迭代调用的函数。
  * * @param {*} element 当前遍历到的元素。
  * * @param {Number} index 当前遍历到的索引。
  * * @param {Array} array 数组本身。

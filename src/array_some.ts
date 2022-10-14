@@ -3,7 +3,7 @@
  * @description 遍历数组，通过 `predicate` 断言函数检测数组中的元素是否存在任意元素通过测试。如果存在元素能通过就返回 `true`，否则返回 `false` 。
  * @tag Array 数组
  * @param {Array} array 需要处理的数组。
- * @param {Function} predicate 每次迭代调用的函数。
+ * @param {*} predicate(element, index, array) 每次迭代调用的函数。
  * * @param {*} element 当前遍历到的元素。
  * * @param {Number} index 当前遍历到的索引。
  * * @param {Array} array 数组本身。

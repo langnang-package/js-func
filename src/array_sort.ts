@@ -3,7 +3,7 @@
  * @description 使用原地算法对数组的元素进行排序，并返回数组。此方法更改原始数组。
  * @tag Array 数组
  * @param {Array} array 需要处理的数组。
- * @param {Function} iteratee 每次迭代调用的函数。
+ * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。
  * * @param {*} b 第二个用于比较的元素。
  * @returns {Array} 排序后的数组。

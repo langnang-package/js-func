@@ -3,7 +3,7 @@
  * @description 自右到左遍历数组元素，每一次运行 `iteratee` 迭代函数会将先前元素的计算结果作为参数传入，最后将其结果汇总为单个返回值。
  * @tag Array 数组
  * @param {Array} array 需要处理的数组。
- * @param {Function} iteratee 每次迭代调用的函数。
+ * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} previous_value 上一次调用 `iteratee` 时的返回值。
  * * @param {*} element 当前遍历到的元素。
  * * @param {Number} index 当前遍历到的索引。

@@ -6,7 +6,7 @@
  * @tag Sorting 排序
  * @tip 算法原理 tip 1. 人为设置一个 BucketSize，作为每个桶所能放置多少个不同数值（例如当 BucketSize==5 时，该桶可以存放｛1,2,3,4,5｝这几种数字，但是容量不限，即可以存放 100 个 3）；\n2. 遍历输入数据，并且把数据一个一个放到对应的桶里去；\n3. 对每个不是空的桶进行排序，可以使用其它排序方法，也可以递归使用桶排序；\n4. 从不是空的桶里把排好序的数据拼接起来。\n
  * @param {Array} array 需要处理的数组。
- * @param {Function} iteratee 每次迭代调用的函数。
+ * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。
  * * @param {*} b 第二个用于比较的元素。
  * @returns {Array} 排序后的数组。

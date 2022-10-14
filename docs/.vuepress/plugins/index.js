@@ -321,9 +321,9 @@ module.exports = [
                 const type_index = 0;
                 const arg_start_index = 1;
                 const arg_end_index =
-                  item.findIndex((v) => /.+\]$/.test(v)) == -1
+                  item.findIndex((v) => /.+[\]|\)]$/.test(v)) == -1
                     ? 1
-                    : item.findIndex((v) => /.+\]$/.test(v));
+                    : item.findIndex((v) => /.+[\]|\)]$/.test(v));
 
                 const param_str = `- \`${item
                   .slice(arg_start_index, arg_end_index + 1)
@@ -382,9 +382,9 @@ module.exports = [
                 const item = params[i];
                 const arg_start_index = 1;
                 const arg_end_index =
-                  item.findIndex((v) => /.+\]$/.test(v)) == -1
+                  item.findIndex((v) => /.+[\]|\)]$/.test(v)) == -1
                     ? 1
-                    : item.findIndex((v) => /.+\]$/.test(v));
+                    : item.findIndex((v) => /.+[\]|\)]$/.test(v));
 
                 content +=
                   (i == 0 ? "" : ", ") +
