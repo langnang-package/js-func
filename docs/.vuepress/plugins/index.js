@@ -144,6 +144,11 @@ module.exports = [
                 (file) => /\.ts$/.test(file) && file[0] !== "_"
               );
               names = files.map((v) => v.substring(0, v.length - 3));
+
+              fs.writeFileSync(
+                resolve(__dirname, "../../../test/TODO.md"),
+                `# Jest TODO\r\n\r\n`
+              );
             }
             const {
               get_comments,
@@ -231,6 +236,11 @@ module.exports = [
                     )
                   ) {
                     content += `\r\r**示例**\r\n\n[\`@langnang/js-func/test/${name}.tsx\`](https://github.com/langnang-package/js-func/blob/master/test/${name}.tsx)\r\n\n<<< @/test/${name}.tsx\r\n`;
+                  } else {
+                    fs.appendFileSync(
+                      resolve(__dirname, "../../../test/TODO.md"),
+                      `- \`${name}\`\r\n`
+                    );
                   }
 
                   if (comments["@tutorial"]) {
@@ -266,7 +276,6 @@ module.exports = [
                     );
 
                   content += `\r\n</CodeSwitcher>`;
-
                   // console.log(content);
                   return content;
                 })

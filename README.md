@@ -21,6 +21,7 @@ import { function_name } from "@langnang/js-func";
 - `random_*`: 随机类
 - `verify_*`: 校验类
 - `*_sort`: 排序类
+- `*_to_*`: 转换类
 
 **常用参数类型及功能**
 

@@ -4,6 +4,7 @@ import { random_int } from "./random_int";
 /**
  * @name random_sudoku
  * @description 生成随机九宫格数独
+ * @category Random
  * @since 0.0.1
  * @param {Array} items 九宫格元素数组
  * @returns {Array} 随机九宫格数独

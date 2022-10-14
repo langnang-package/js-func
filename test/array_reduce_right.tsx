@@ -5,7 +5,7 @@ describe("array_reduce_right", () => {
   it("MDN: 求一个数组中所有值的和", () => {
     var sum = array_reduce_right([0, 1, 2, 3], function (a: any, b: any) {
       return a + b;
-    });
+    }, 0);
 
     expect(sum).toEqual(6);
 
