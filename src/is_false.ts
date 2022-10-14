@@ -3,7 +3,6 @@ import { is_boolean } from "./is_boolean";
 /**
  * @name is_false
  * @description 检测对象是否为 `false`
- * @syntax ;
  * @param {*} object 需要检测的对象
  * @returns {Boolean} 检测结果
  */

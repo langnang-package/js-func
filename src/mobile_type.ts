@@ -2,7 +2,6 @@
 /**
  * @name mobile_type
  * @description 检测移动设备的终端类型
- * @syntax ;
  * @returns {String} 设备的终端类型
  */
 export const mobile_type = () => {

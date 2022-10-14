@@ -1,7 +1,6 @@
 /**
  * @name is_primitive
  * @description 检测对象是否是原始数据类型
- * @syntax ;
  * @param {*} object 需要检测的对象
  * @returns {Boolean} 检测结果
  */

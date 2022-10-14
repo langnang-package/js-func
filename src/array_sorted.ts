@@ -4,7 +4,6 @@ import { array_sort_iteratee_charat } from "./array_sort";
  * @name array_sorted
  * @description 检测数组是否已排序。如果数组按升序排序，则返回 1;如果按降序排序，则返回 -1;如果未排序，则返回 0。
  * @tag Array 数组
- * @syntax array_sorted(array, iteratee(a, b));
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

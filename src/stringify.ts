@@ -1,7 +1,6 @@
 /**
  * @name stringify
  * @description json转字符串
- * @syntax ;
  * @param {*} object `JSON`对象 
  * @returns {String} 转换后的字符串
  */

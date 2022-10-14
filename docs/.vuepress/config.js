@@ -16,7 +16,7 @@ module.exports = {
    * @type String
    * @default undefined
    */
-  description: "JavaScript Function",
+  description: "Document for @langnang/js-func",
   /**
    * 额外的需要被注入到当前页面的 HTML <head> 中的标签，每个标签都可以以 [tagName, { attrName: attrValue }, innerHTML?] 的格式指定，
    * @type Array
@@ -34,7 +34,7 @@ module.exports = {
    * @type Number
    * @default 8080
    */
-  port: 8080,
+  port: 8089,
   /**
    * 插件通常会为 VuePress 添加全局功能。插件的范围没有限制。
    * 你可以在 Awesome VuePress (opens new window)中找到更多的插件。

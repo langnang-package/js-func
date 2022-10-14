@@ -2,10 +2,9 @@
  * @name gcd
  * @description 欧几里得算法。计算两个非负整数的最大公约数。
  * @tag Math 算术
- * @syntax ;
  * @param {Number} a 第一个非负整数
  * @param {Number} b 第二个非负整数
- * @return {Number} 最大公约数
+ * @returns {Number} 最大公约数
  */
 export const gcd = (a: number, b: number): number => {
   const gcd_a = Math.abs(a);

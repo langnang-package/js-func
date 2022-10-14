@@ -3,7 +3,6 @@ import { object_type } from "./object_type";
 /**
  * @name is_dom
  * @description 检测对象是否 `DOM`
- * @syntax ;
  * @param {*} object
  * @returns {Boolean} 检测结果
  * TODO jest

@@ -21,8 +21,8 @@ module.exports = {
      * 导航栏链接
      */
     nav: [
-      // { text: "Home", link: "/" },
-      // { text: "Guide", link: "/guide/" },
+      { text: "Home", link: "/" },
+      { text: "Document", link: "/document/" },
       // { text: "ICON", link: "/icon/" },
       // { text: "Function", link: "/function/" },
       // { text: "CSS", link: "/css/" },

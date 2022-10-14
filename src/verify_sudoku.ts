@@ -2,7 +2,6 @@
 /**
  * @name verify_sudoku
  * @description 校验数独结果
- * @syntax ;
  * @param {Array} sudoku
  * @returns {Boolean} 
  */

@@ -121,24 +121,36 @@ module.exports = [
   // [require("./github-file")],
 
   [
-    require("./markdown-template"),
+    require("./page-rewrite"),
     {
       bundles: {
+        home: {
+          handler(page, option, slot) {
+            // console.log(page);
+            const content = fs
+              .readFileSync(resolve(__dirname, `../../../README.md`))
+              .toString();
+            return page._strippedContent + "\r\n" + content;
+          },
+        },
         function: {
           handler(page, option, slots) {
-            let names = page.frontmatter.templateNames || [
+            let names = page.frontmatter.rewriteNames || [
               page.frontmatter.name || page.title,
             ];
-
-            if (page.path === "/") {
+            if (page.relativePath === "document/README.md") {
               let files = fs.readdirSync(resolve(__dirname, `../../../src/`));
               files = files.filter(
                 (file) => /\.ts$/.test(file) && file[0] !== "_"
               );
               names = files.map((v) => v.substring(0, v.length - 3));
             }
-            const { get_comments, content_params, get_realizes } =
-              option.methods;
+            const {
+              get_comments,
+              content_params,
+              get_realizes,
+              content_syntax,
+            } = option.methods;
             return (
               page._strippedContent +
               "\r\n" +
@@ -207,10 +219,17 @@ module.exports = [
                     content += tip;
                   }
 
-                  if (comments["@syntax"]) {
-                    syntax = comments["@syntax"][0].join(" ");
-                    content += `\r\n**语法**\r\n\`\`\`js\r\n${syntax}\n\`\`\`\r\n`;
-                  }
+                  // if (comments["@syntax"] || comments["@param"]) {
+                  //   syntax = comments["@syntax"]
+                  //     ? comments["@syntax"][0].join(" ")
+                  //     : `${name}(${content_syntax(comments)});`;
+                  //   console.log(syntax);
+                  //   content += `\r\n**语法**\r\n\`\`\`js\r\n${syntax}\n\`\`\`\r\n`;
+                  // }
+
+                  syntax = `${name}(${content_syntax(comments)});`;
+                  content += `\r\n**语法**\r\n\`\`\`js\r\n${syntax}\n\`\`\`\r\n`;
+
                   if (slots[name] && slots[name].syntax)
                     content += slots[name].syntax;
 
@@ -349,6 +368,26 @@ module.exports = [
                 (t, v) => t + li_param(v),
                 ""
               )}`;
+              return content;
+            },
+            content_syntax(comments, key = "@param") {
+              if (!comments[key]) return "";
+              const params = comments[key];
+              let i = 0;
+              let content = "";
+              while (i < params.length) {
+                const item = params[i];
+                const arg_start_index = 1;
+                const arg_end_index =
+                  item.findIndex((v) => /.+\]$/.test(v)) == -1
+                    ? 1
+                    : item.findIndex((v) => /.+\]$/.test(v));
+
+                content +=
+                  (i == 0 ? "" : ", ") +
+                  item.slice(arg_start_index, arg_end_index + 1).join(" ");
+                i++;
+              }
               return content;
             },
             build_returns(comments, key = "@returns") {},

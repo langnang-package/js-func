@@ -1,14 +1,14 @@
 const { path } = require("@vuepress/shared-utils");
 
 const plugin = (options = {}, ctx) => ({
-  name: "@langangn/vuepress-plugin-markdown-template",
+  name: "@langangn/vuepress-plugin-page-rewrite",
   additionalPages(app) {
     const { pages } = app;
-    const template_names = Object.keys(options.bundles);
+    const rewrite_names = Object.keys(options.bundles);
     let rewrite_pages = pages.filter(
       (item) =>
-        item.frontmatter.template &&
-        template_names.includes(item.frontmatter.template)
+        item.frontmatter.rewrite &&
+        rewrite_names.includes(item.frontmatter.rewrite)
     );
     return rewrite_pages.map((page) => {
       let slots = {};
@@ -23,8 +23,8 @@ const plugin = (options = {}, ctx) => ({
         const split = content.split("\r\n");
         const name = split[0]
           .split(" ")
-          .filter((v) => /template:/.test(v))[0]
-          .substring("template:".length);
+          .filter((v) => /rewrite:/.test(v))[0]
+          .substring("rewrite:".length);
         const life = split[0]
           .split(" ")
           .filter((v) => /slot:/.test(v))[0]
@@ -42,9 +42,9 @@ const plugin = (options = {}, ctx) => ({
       }
       return {
         ...page,
-        content: options.bundles[page.frontmatter.template].handler(
+        content: options.bundles[page.frontmatter.rewrite].handler(
           page,
-          options.bundles[page.frontmatter.template],
+          options.bundles[page.frontmatter.rewrite],
           slots
         ),
       };

@@ -2,7 +2,6 @@
  * @name array_fill
  * @description 用一个固定值填充一个数组中从起始索引到终止索引内的全部元素。不包括终止索引。
  * @tag Array 数组
- * @syntax array_fill(array, value, [start = 0], [end = array.length]);
  * @param {Array} array 需要处理的数组。
  * @param {*} value 用来填充数组元素的值。
  * @param {Number} [start = 0] 起始索引，默认值为 0。

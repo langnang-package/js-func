@@ -9,7 +9,6 @@
 /**
  * solve_sudoku
  * @description 解答数独问题
- * @syntax ;
  * @param {Array} sudoku 
  * @param {Array} unique 
  * @returns {Array} 解答后的数独

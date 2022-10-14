@@ -5,7 +5,6 @@ import { is_undefined } from "./is_undefined";
 /**
  * @name is_empty
  * @description 检测对象是否为空
- * @syntax ;
  * @param {*} object 需要检测的对象
  * @returns {Boolean} 检测结果
  */

@@ -5,7 +5,6 @@ import { array_push } from "./array_push";
  * @name array_unique
  * @description 返回数组的所有的不同元素值（去重）
  * @tag Array 数组
- * @syntax ;
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee
  * @returns {Array} 去重后的数组。

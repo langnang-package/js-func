@@ -3,7 +3,6 @@ import { array_push } from "./array_push";
  * @name array_map
  * @description 遍历数组，根据 `iteratee`（迭代函数）遍历所有元素返回的结果所组成新的数组。
  * @tag Array 数组
- * @syntax array_map(array, iteratee(element, index, array));
  * @param {Array} array 需要处理的数组。
  * @param {Function} iteratee 每次迭代调用的函数。
  * * @param {*} element 当前遍历到的元素。
