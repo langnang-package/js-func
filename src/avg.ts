@@ -6,6 +6,6 @@ import { sum } from "./sum";
  * @category Math
  * @since 0.0.2
  * @param {...Number} nums 需要计算的数值
- * @return {Number} 计算的结果
+ * @returns{Number} 计算的结果
  */
 export const avg = (...nums: number[]) => sum(nums) / nums.length;

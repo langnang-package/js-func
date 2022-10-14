@@ -10,7 +10,7 @@ import { array_reduce } from "./array_reduce";
  * * @param {*} element 当前遍历到的元素。
  * * @param {Number} index 当前遍历到的索引。
  * * @param {Array} array 数组本身。
- * @return {Number} 计算的结果
+ * @returns{Number} 计算的结果
  * @tutorial https://www.lodashjs.com/docs/lodash.sum
  * @tutorial https://www.lodashjs.com/docs/lodash.sumBy
  */
