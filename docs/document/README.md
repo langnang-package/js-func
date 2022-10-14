@@ -1,6 +1,6 @@
 ---
 rewrite: function
-rewriteNames: [random]
+rewriteNames: [bubble_sort]
 ---
 
 # Function

@@ -150,6 +150,7 @@ module.exports = [
               content_params,
               get_realizes,
               content_syntax,
+              content_tips,
             } = option.methods;
             return (
               page._strippedContent +
@@ -202,30 +203,7 @@ module.exports = [
                       "\n\n";
                   }
 
-                  if (comments["@tip"]) {
-                    let tip = "\r\n::: ";
-                    if (
-                      ["warning", "danger", "details"].includes(
-                        comments["@tip"][0][0]
-                      )
-                    ) {
-                      tip += comments["@tip"][0][0] + "" + "\r\n";
-                      tip += comments["@tip"][0].slice(1).join(" ");
-                    } else {
-                      tip += "tip\r\n";
-                      tip += comments["@tip"][0].join(" ");
-                    }
-                    tip += "\r\n:::\r\n";
-                    content += tip;
-                  }
-
-                  // if (comments["@syntax"] || comments["@param"]) {
-                  //   syntax = comments["@syntax"]
-                  //     ? comments["@syntax"][0].join(" ")
-                  //     : `${name}(${content_syntax(comments)});`;
-                  //   console.log(syntax);
-                  //   content += `\r\n**语法**\r\n\`\`\`js\r\n${syntax}\n\`\`\`\r\n`;
-                  // }
+                  content += content_tips(comments);
 
                   syntax = `${name}(${content_syntax(comments)});`;
                   content += `\r\n**语法**\r\n\`\`\`js\r\n${syntax}\n\`\`\`\r\n`;
@@ -370,6 +348,31 @@ module.exports = [
               )}`;
               return content;
             },
+            // 提示，如果存在提示代码则前面的为标题，若不存在则默认无标题
+            content_tips(comments, key = "@tip") {
+              if (!comments[key]) return "";
+              const tip = comments[key][0];
+              let title = "";
+              let type = "";
+              let tip_content = "";
+              const type_index = tip.findIndex((v) =>
+                ["warning", "danger", "details", "tip"].includes(v)
+              );
+              if (type_index == -1) {
+                type = "tip";
+                tip_content = tip.join(" ");
+              } else {
+                type = tip[type_index];
+                title = tip.slice(0, type_index).join(" ");
+                tip_content = tip.slice(type_index + 1).join(" ");
+              }
+              tip_content = tip_content
+                .split("\\n")
+                .reduce((t, v) => t + `\r\n${v}`, "");
+              let content = `\r\n::: ${type} ${title}\r\n${tip_content}\r\n\r\n:::\r\n`;
+              return content;
+            },
+            // 根据参数生成语法
             content_syntax(comments, key = "@param") {
               if (!comments[key]) return "";
               const params = comments[key];
