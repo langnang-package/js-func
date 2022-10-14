@@ -1,10 +1,11 @@
 /**
  * @name bubble_sort
  * @description 冒泡排序。重复遍历比较相邻元素，将最大/小元素移至末尾，并逐渐减少遍历长度
- * @tag Array 数组
- * @tag Algorithm 算法
- * @tag Sorting 排序
+ * @category Array 数组
+ * @category Algorithm 算法
+ * @category Sorting 排序
  * @tip 算法原理 tip 1. 比较相邻的元素。如果第一个比第二个大，就交换他们两个。\n2. 对每一对相邻元素做同样的工作，从开始第一对到结尾的最后一对。在这一点，最后的元素应该会是最大的数。\n3. 针对所有的元素重复以上的步骤，除了最后一个。\n4. 持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。\n
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

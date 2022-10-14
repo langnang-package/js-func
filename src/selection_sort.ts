@@ -1,10 +1,11 @@
 /**
  * @name selection_sort
  * @description 选择排序。重复遍历未排序部分,将最小元素移至已排序末尾。
- * @tag Array 数组
- * @tag Algorithm 算法
- * @tag Sorting 排序
+ * @category Array 数组
+ * @category Algorithm 算法
+ * @category Sorting 排序
  * @tip 算法原理 tip 1. 初始状态：无序区为 R[1..n]，有序区为空；\n2. 第 i 趟排序(i=1,2,3…n-1)开始时，当前有序区和无序区分别为 R[1..i-1]和 R(i..n）。该趟排序从当前无序区中-选出关键字最小的记录 R[k]，将它与无序区的第 1 个记录 R 交换，使 R[1..i]和 R[i+1..n)分别变为记录个数增加 1 个的新有序区和记录个数减少 1 个的新无序区；\n3. n-1 趟结束，数组有序化了。\n
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

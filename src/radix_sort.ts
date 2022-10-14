@@ -1,10 +1,11 @@
 /**
  * @name radix_sort
  * @description 基数排序。取最大值及其位数,取元素的每个位组成技术序列,进行计数排序。
- * @tag Array 数组
- * @tag Algorithm 算法
- * @tag Sorting 排序
+ * @category Array 数组
+ * @category Algorithm 算法
+ * @category Sorting 排序
  * @tip 算法原理 tip 1. 取得数组中的最大数，并取得位数；\n2. array 为原始数组，从最低位开始取每个位组成 radix 数组；\n3. 对 radix 进行计数排序（利用计数排序适用于小范围数的特点）；\n
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

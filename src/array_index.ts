@@ -2,7 +2,8 @@ import { _from_index } from "./_form_index";
 /**
  * @name array_index
  * @description 数组中可以找到给定元素的第一个索引，如果不存在，则返回 -1。
- * @tag Array 数组
+ * @category Array 数组
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} value 要查找的元素。
  * @param {Number} [from_index = 0] 起始索引，默认值为 0。

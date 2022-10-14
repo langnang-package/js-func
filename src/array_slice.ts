@@ -2,7 +2,8 @@ import { _from_index } from "./_form_index";
 /**
  * @name array_slice
  * @description 裁剪数组，从 start 位置开始到 end 结束，但不包括 end 本身的位置。
- * @tag Array 数组
+ * @category Array 数组
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {Number} [begin = 0] 开始位置。
  * @param {Number} [end = array.length] 结束位置。

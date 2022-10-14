@@ -1,10 +1,11 @@
 /**
  * @name counting_sort
  * @description 计数排序。取最大值和最小值,统计元素出现次数,计数累加,反向填充输出。
- * @tag Array 数组
- * @tag Algorithm 算法
- * @tag Sorting 排序
+ * @category Array 数组
+ * @category Algorithm 算法
+ * @category Sorting 排序
  * @tip 算法原理 tip 1. 找出待排序的数组中最大和最小的元素；\n2. 统计数组中每个值为 i 的元素出现的次数，存入数组 C 的第 i 项；\n3. 对所有的计数累加（从 C 中的第一个元素开始，每一项和前一项相加）；\n4. 反向填充目标数组：将每个元素 i 放在新数组的第 C(i)项，每放一个元素就将 C(i)减去 1。\n
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

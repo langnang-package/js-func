@@ -4,6 +4,9 @@ import { random_int } from "./random_int";
 /**
  * @name random_sudoku
  * @description 生成随机九宫格数独
+ * @since 0.0.1
+ * @param {Array} items 九宫格元素数组
+ * @returns {Array} 随机九宫格数独
  */
 export const random_sudoku = (items: any[] = [1, 2, 3, 4, 5, 6, 7, 8, 9]) => {
   let result: any[] = [];

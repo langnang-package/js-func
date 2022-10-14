@@ -2,8 +2,9 @@
 /**
  * @name verify_sudoku
  * @description 校验数独结果
- * @param {Array} sudoku
- * @returns {Boolean} 
+ * @since 0.0.1
+ * @param {Array} sudoku 需要校验的数独
+ * @returns {Boolean} 校验结果
  */
 export const verify_sudoku = (sudoku: any[]) => {
   return verify_sudoku_row(sudoku) && verify_sudoku_col(sudoku) && verify_sudoku_block(sudoku)

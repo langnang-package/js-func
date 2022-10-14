@@ -1,10 +1,11 @@
 /**
  * @name quick_sort
  * @description 快速排序。根据基准值分割序列,左侧小于,右侧大于,递归执行后合并。
- * @tag Array 数组
- * @tag Algorithm 算法
- * @tag Sorting 排序
+ * @category Array 数组
+ * @category Algorithm 算法
+ * @category Sorting 排序
  * @tip 算法原理 tip 1. 从数列中挑出一个元素，称为 “基准”（pivot）；\n2. 重新排序数列，所有元素比基准值小的摆放在基准前面，所有元素比基准值大的摆在基准的后面（相同的数可以到任一边）。在这个分区退出之后，该基准就处于数列的中间位置。这个称为分区（partition）操作；\n3. 递归地（recursive）把小于基准值元素的子数列和大于基准值元素的子数列排序。\n
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} iteratee(element, index, array) 每次迭代调用的函数。
  * * @param {*} a 第一个用于比较的元素。

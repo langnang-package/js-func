@@ -189,8 +189,8 @@ module.exports = [
                     content += `${description}\r\n`;
                   }
 
-                  if (comments["@tag"]) {
-                    const tags = comments["@tag"];
+                  if (comments["@category"]) {
+                    const tags = comments["@category"];
 
                     content +=
                       "\r\n" +
@@ -204,6 +204,10 @@ module.exports = [
                   }
 
                   content += content_tips(comments);
+
+                  if (comments["@since"]) {
+                    content += `\r\n**添加版本**\r\n\r\n${comments["@since"][0][0]}\r\n\r\n`;
+                  }
 
                   syntax = `${name}(${content_syntax(comments)});`;
                   content += `\r\n**语法**\r\n\`\`\`js\r\n${syntax}\n\`\`\`\r\n`;
@@ -306,7 +310,7 @@ module.exports = [
             build_description(comments, key = "@description") {
               return `\r\n${comments[key][0][0]}\r\n`;
             },
-            build_tags(comments, key = "@tag") {},
+            build_tags(comments, key = "@category") {},
             build_syntax(comments, key = "@syntax") {},
             // 注释中的参数对象转Markdown字符串
             content_params(comments, key = "@param") {

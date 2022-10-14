@@ -4,6 +4,7 @@ import { is_undefined } from "./is_undefined";
 /**
  * @name is_defined
  * @description 检测对象是否已定义
+ * @since 0.0.1
  * @param {*} object 需要检测的对象
  * @returns {Boolean} 检测结果
  */

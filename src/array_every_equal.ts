@@ -3,7 +3,8 @@ import { array_every } from "./array_every";
 /**
  * @name array_every_equal
  * @description 检测数组所有元素是否全等
- * @tag Array 数组
+ * @category Array 数组
+ * @since 0.0.1
  * @param {Array} array 需要检测的数组
  * @returns {Boolean} 检测结果
  */

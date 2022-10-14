@@ -1,7 +1,8 @@
 /**
  * @name array_find
  * @description 遍历数组，返回第一个通过 `predicate` 迭代函数检测的元素值，如果没有元素通过检测则返回 `undefined`。
- * @tag Array 数组
+ * @category Array 数组
+ * @since 0.0.1
  * @param {Array} array 需要处理的数组。
  * @param {*} predicate(element, index, array) 每次迭代调用的函数。
  * * @param {*} element 当前遍历到的元素。
