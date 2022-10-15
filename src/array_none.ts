@@ -10,7 +10,6 @@ import { array_every } from "./array_every";
  * * @param {*} element 当前遍历到的元素。
  * * @param {Number} index 当前遍历到的索引。
  * * @param {Array} array 数组本身。
- * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {Boolean} 如果所有元素通过 `predicate` 断言函数检测后都返回真值，那么就返回 `false`，否则返回 `true` 。
  */
-export const array_none = (array: any[], predicate: any, this_arg: any = null) => !array_every(array, predicate, this_arg)
+export const array_none = (array: any[], predicate: any) => !array_every(array, predicate)

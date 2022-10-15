@@ -1,6 +1,8 @@
 /**
  * @name _from_index
  * @description 根据条件界限及索引值返回正确的起始索引
+ * @category Helper
+ * @since 0.0.1
  * @param {Number} limit 条件界限
  * @param {Number} start 索引值
  * @returns {Number} 正确的起始索引

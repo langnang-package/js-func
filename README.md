@@ -15,13 +15,20 @@ import { function_name } from "@langnang/js-func";
 **函数名称分类**
 
 - `array_*`: 数组类
+- `date_*`: 时间类
+- `*_get_*`: 取值类
+- `*_set_*`: 赋值类
+- `*_set`: 集合类
 - `has_*`: 包含检测类
+- `in_*`: 包含检测类
 - `is_*`: 检测类
 - `mock_*`: 模拟数据类
 - `random_*`: 随机类
 - `verify_*`: 校验类
 - `*_sort`: 排序类
 - `*_to_*`: 转换类
+- `*_of_*`:
+- `*_for_*`:
 
 **常用参数类型及功能**
 

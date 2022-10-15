@@ -8,12 +8,11 @@
  * * @param {*} element 当前遍历到的元素。
  * * @param {Number} index 当前遍历到的索引。
  * * @param {Array} array 数组本身。
- * @param {*} this_arg 执行回调时用作 `this` 的对象。
  * @returns {*} 返回数组执行遍历的次数，一般为数组的长度。
  * @tutorial https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
  * @tutorial https://www.lodashjs.com/docs/lodash.forEach
  */
-export const array_foreach = (array: any[], iteratee: any, this_arg: any = null) => {
+export const array_foreach = (array: any[], iteratee: any) => {
   let len: number = 0;
   while (len < array.length) {
     const truth = iteratee(array[len], len, array);
