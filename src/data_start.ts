@@ -1,6 +1,4 @@
-import { array_foreach } from "./array_foreach";
 import { deep_copy } from "./deep_copy";
-import { _in_date_interval, _date_interval_keys } from "./_in_date_interval";
 
 /**
  * @name date_start
@@ -12,9 +10,9 @@ import { _in_date_interval, _date_interval_keys } from "./_in_date_interval";
  * @returns {Date} 获取的开始时间
  */
 export const date_start = (date: Date, interval: string = "day"): Date => {
-  if (!_in_date_interval(interval)) return date;
+  if (!date_start[interval.toLocaleLowerCase()]) return date;
 
-  return eval(`date_start_of_${interval.toLocaleLowerCase()}(date)`);
+  return date_start[interval.toLocaleLowerCase()](date);
 }
 
 
@@ -23,12 +21,12 @@ export const date_start_of_millisecond = date_start.millisecond = (date: Date): 
   date.setMilliseconds(0);
   return date;
 }
-
 export const date_start_of_second = (date: Date): Date => {
   date = date_start_of_millisecond(date);
   date.setSeconds(0);
   return date;
 }
+date_start.second = date_start_of_second;
 
 export const date_start_of_minute = (date: Date): Date => {
   date = date_start_of_second(date);

@@ -5,6 +5,4 @@ describe("array_keys", () => {
   it("MDN", () => {
     expect(array_keys(["a", , "c"])).toEqual([0, 1, 2]);
   });
-  it("Lodash", () => { });
-  it("Underscore", () => { });
 })

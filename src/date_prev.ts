@@ -3,5 +3,5 @@
  * @param {*} date
  * @param {*} n
  */
-export const prev_days = (date, n = 1) =>
+export const date_prev = (date: Date, interval: string, n = 1) =>
   new Date(date.getTime() - n * 24 * 60 * 60 * 1000);

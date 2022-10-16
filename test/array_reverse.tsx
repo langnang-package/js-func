@@ -18,5 +18,4 @@ describe("array_reverse", () => {
     expect(array_reverse(array)).toEqual(array);
 
   });
-  it("Underscore", () => { });
 })

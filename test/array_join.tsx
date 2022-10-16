@@ -13,5 +13,4 @@ describe("array_join", () => {
   it("Lodash", () => {
     expect(array_join(['a', 'b', 'c'], '~')).toEqual('a~b~c');
   });
-  it("Underscore", () => { });
 })

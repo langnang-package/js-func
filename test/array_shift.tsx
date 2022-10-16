@@ -26,6 +26,4 @@ describe("array_shift", () => {
     // Andrew, Edward, Paul, Chris, John
 
   });
-  it("Lodash", () => { });
-  it("Underscore", () => { });
 })

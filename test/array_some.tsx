@@ -91,5 +91,4 @@ describe("array_some", () => {
     // => true
 
   });
-  it("Underscore", () => { });
 })

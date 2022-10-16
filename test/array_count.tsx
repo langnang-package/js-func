@@ -2,7 +2,6 @@ import { array_count } from '../main'
 
 describe("array_count", () => {
   it("main", () => { });
-  it("MDN", () => { });
   it("Lodash", () => {
     expect(array_count([6.1, 4.2, 6.3], Math.floor)).toEqual({ '4': 1, '6': 2 })
 

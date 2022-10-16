@@ -37,5 +37,4 @@ describe("array_find_index", () => {
     // _.findIndex(users, 'active');
     // => 2
   });
-  it("Underscore", () => { });
 })

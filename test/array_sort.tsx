@@ -64,6 +64,4 @@ describe("array_sort", () => {
     });
 
   });
-  it("Lodash", () => { });
-  it("Underscore", () => { });
 })

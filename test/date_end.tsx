@@ -12,7 +12,4 @@ describe("date_end", () => {
     expect(date_format(date_end(date, 'month'), 'MM-DD HH:mm:ss msc')).toEqual(end_date.slice(-18));
     expect(date_format(date_end(date, 'year'))).toEqual(end_date);
   });
-  it("MDN", () => { });
-  it("Lodash", () => { });
-  it("Underscore", () => { });
 })

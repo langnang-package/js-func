@@ -27,6 +27,4 @@ describe("array_slice", () => {
     expect(citrus).toEqual(['Orange', 'Lemon']);
 
   });
-  it("Lodash", () => { });
-  it("Underscore", () => { });
 })

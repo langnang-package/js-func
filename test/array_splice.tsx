@@ -52,6 +52,4 @@ describe("array_splice", () => {
     expect([...myFish].splice(2)).toEqual(array_splice([...myFish], 2));
 
   });
-  it("Lodash", () => { });
-  it("Underscore", () => { });
 })

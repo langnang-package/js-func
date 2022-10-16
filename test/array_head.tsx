@@ -8,7 +8,6 @@ describe("array_head", () => {
     expect(array_head([1, 2, 3], 2)).toEqual([1, 2]);
     expect(array_head([1, 2, 3], 3)).toEqual([1, 2, 3]);
   });
-  it("MDN", () => { });
   it("Lodash", () => {
     expect(array_head([1, 2, 3])).toEqual(1);
 

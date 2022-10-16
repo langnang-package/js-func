@@ -2,7 +2,6 @@ import { sum } from '../main'
 
 describe("sum", () => {
   it("main", () => { });
-  it("MDN", () => { });
   it("Lodash.sum", () => {
     expect(sum([4, 2, 8, 6])).toEqual(20);
   });
@@ -17,5 +16,4 @@ describe("sum", () => {
     // _.sumBy(objects, 'n');
     // => 20
   });
-  it("Underscore", () => { });
 })

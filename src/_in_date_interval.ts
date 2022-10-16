@@ -37,20 +37,20 @@ export const _date_interval: any = {
 /**
  * 时间间隔函数模板
 
-export const date_func_millisecond = date_func.millisecond (date: Date): Date => { return date; }
-export const date_func_second = date_func.second (date: Date): Date => { return date; }
-export const date_func_minute = date_func.minute (date: Date): Date => { return date; }
-export const date_func_hour = date_func.hour (date: Date): Date => { return date; }
-export const date_func_12hour = date_func.12hour (date: Date): Date => { return date; }
-export const date_func_day = date_func.day (date: Date): Date => { return date; }
-export const date_func_day_of_month = date_func.day_of_month (date: Date): Date => { return date; }
-export const date_func_day_of_year = date_func.day_of_year (date: Date): Date => { return date; }
-export const date_func_week = date_func.week (date: Date): Date => { return date; }
-export const date_func_week_of_year = date_func.week_of_year (date: Date): Date => { return date; }
-export const date_func_month = date_func.month (date: Date): Date => { return date; }
-export const date_func_season = date_func.season (date: Date): Date => { return date; }
-export const date_func_year = date_func.year (date: Date): Date => { return date; }
-export const date_func_decade = date_func.decade (date: Date): Date => { return date; }
-export const date_func_century = date_func.century (date: Date): Date => { return date; }
+export const date_func_millisecond = date_func.millisecond  = (date: Date) => date;
+export const date_func_second = date_func.second = (date: Date) => date;
+export const date_func_minute = date_func.minute = (date: Date) => date;
+export const date_func_hour = date_func.hour = (date: Date) => date;
+export const date_func_12hour = date_func["12hour"] = (date: Date) => date;
+export const date_func_day = date_func.day = (date: Date) => date;
+export const date_func_day_of_week = date_func.day_of_week = (date: Date) => date;
+export const date_func_day_of_year = date_func.day_of_year = (date: Date) => date;
+export const date_func_week = date_func.week = (date: Date) => date;
+export const date_func_week_of_year = date_func.week_of_year = (date: Date) => date;
+export const date_func_month = date_func.month = (date: Date) => date;
+export const date_func_season = date_func.season = (date: Date) => date;
+export const date_func_year = date_func.year = (date: Date) => date;
+export const date_func_decade = date_func.decade = (date: Date) => date;
+export const date_func_century = date_func.century = (date: Date) => date;
 
 */
