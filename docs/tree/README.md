@@ -22,7 +22,8 @@
     - `.find_last_index`
     - `.flat`
     - `.flat_map`
-    - `.foreach`
+    - ~~`.foreach`~~
+    - ~~`.foreach_right`~~
     - `.group`
     - `.group_to_map`
     - `.includes`

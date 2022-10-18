@@ -11,6 +11,7 @@ rewriteNames: [bubble_sort]
 - [Underscore](https://underscorejs.net/)
 - [Lodash](https://www.lodashjs.com/)
 - [Moment](https://momentjs.bootcss.com/)
+- [JavaScript Snippets - 30 seconds of code](https://www.30secondsofcode.org/js/p/1)
 
 <!-- rewrite:array_every slot:syntax
 

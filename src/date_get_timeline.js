@@ -16,7 +16,7 @@ import { nextSeconds } from "./nextSeconds";
  * @param {String} unit
  * @param {String} fm
  */
-export const timeline = (
+export const date_get_timeline = (
   start,
   end = new Date(),
   unit = "day",

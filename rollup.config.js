@@ -15,7 +15,8 @@ const OUTPUT_BANNER = `
 
 const files = requireContext(path.join(__dirname, "./src"), false, /\.ts$/);
 const entry = fs.openSync(path.join(__dirname, "./main.ts"), "w");
-const entryInner = files
+
+const entry_content = files
   .keys()
   .reduce(
     (total, file) =>
@@ -27,7 +28,7 @@ const entryInner = files
         : total,
     ""
   );
-fs.writeSync(entry, entryInner);
+fs.writeSync(entry, entry_content);
 // import "./buildEntry";
 export default [
   {
