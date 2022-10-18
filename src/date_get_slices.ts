@@ -2,21 +2,21 @@ import { array_includes } from "./array_includes";
 import { array_map } from "./array_map";
 
 /**
- * @name _in_date_interval
+ * @name date_get_slices
  * @description 检测是否是符合的时间间隔，是则返回对应的间隔名称，不是则返回 `false`
  * @category Helper
  * @since 0.0.2
  * @param {String} interval 需要检测的时间间隔 
- * @returns {String|Boolean} 检测结果，是则返回对应的间隔名称，不是则返回 `false`
+ * @returns {Object|String} 检测结果，是则返回对应的间隔名称，不是则返回 `false`
  */
-export const _in_date_interval = (interval: string): boolean | string => {
-  for (let key in _date_interval) {
-    if (array_includes((_date_interval[key] || []), interval)) return key;
+export const date_get_slices = (interval: string): object | string => {
+  for (let key in date_slices) {
+    if (array_includes((date_slices[key] || []), interval)) return key;
   }
-  return false;
+  return date_slices;
 }
 
-export const _date_interval: any = {
+export const date_slices: any = {
   "millisecond": ["millisecond", "msc"], // 毫秒
   "second": ["second", "ss", "s"],// 秒
   "minute": ["minute", "mm", "m"],// 分

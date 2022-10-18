@@ -1,16 +1,28 @@
 # Jest TODO
 
 - `avg`
+- `date_format`
+- `date_get_hour`
+- `date_get_month`
+- `date_get_second`
+- `date_get_slices`
+- `date_get_timestamp`
+- `date_get_year`
 - `hex_to_rgba`
 - `is_divisible`
 - `is_dom`
 - `is_even`
+- `is_leap_year`
+- `is_lunar_month`
 - `is_even`
+- `is_solar_month`
 - `max`
 - `min`
 - `mobile_type`
 - `random_sudoku`
 - `rgb_to_hex`
 - `stringify`
+- `tomorrow`
 - `verify_regexp`
 - `verify_sudoku`
+- `yesterday`

@@ -1,0 +1,114 @@
+# tree
+
+- `_`
+  - `.get`
+  - `.has`
+  - `.is`
+  - `.in`
+  - `.set`
+  - `.to`
+- `array`
+  - `.__proto__`
+    - `.at`
+    - `.concat`
+    - `.copy_within`
+    - `.entries`
+    - `.every`
+    - `.fill`
+    - `.filter`
+    - `.find`
+    - `.find_index`
+    - `.find_last`
+    - `.find_last_index`
+    - `.flat`
+    - `.flat_map`
+    - `.foreach`
+    - `.group`
+    - `.group_to_map`
+    - `.includes`
+    - `.index`
+    - `.join`
+    - `.keys`
+    - `.last_index`
+    - `.map`
+    - `.pop`
+    - `.push`
+    - `.reduce`
+    - `.reduce_right`
+    - `.reverse`
+    - `.shift`
+    - `.slice`
+    - `.some`
+    - `.sort`
+    - `.splice`
+    - `.to_locale_string`
+    - `.to_string`
+    - `.unshift`
+    - `.values`
+  - `.get`
+  - `.is`
+- `date`
+  - `.get`
+    - `.slices`
+      - `.timestamp`
+      - `.millisecond`
+      - `.second`
+      - `.minute`
+      - `.hour`
+      - `.day`
+      - `.day_of_week`
+      - `.day_of_year`
+      - `.week`
+      - `.week_of_year`
+      - `.month`
+      - `.season`
+      - `.year`
+      - `.decade`
+      - `.century`
+    - `.timeline`
+  - `.is`
+  - `.set`
+- `function`
+- `number`
+- `math`
+  - `.avg`
+  - `.max`
+  - `.min`
+- `object`
+- `string`
+  - `.__proto__`
+    - `.at`
+    - `.charAt`
+    - `.charCodeAt`
+    - `.codePointAt`
+    - `.concat`
+    - `.endsWith`
+    - `.fromCharCode`
+    - `.fromCodePoint`
+    - `.includes`
+    - `.indexOf`
+    - `.lastIndexOf`
+    - `.localeCompare`
+    - `.match`
+    - `.matchAll`
+    - `.normalize`
+    - `.padEnd`
+    - `.padStart`
+    - `.raw`
+    - `.repeat`
+    - `.replace`
+    - `.replaceAll`
+    - `.search`
+    - `.slice`
+    - `.split`
+    - `.startsWith`
+    - `.substring`
+    - `.toLocaleLowerCase`
+    - `.toLocaleUpperCase`
+    - `.toLowerCase`
+    - `.toString`
+    - `.toUpperCase`
+    - `.trim`
+    - `.trimEnd`
+    - `.trimStart`
+    - `.valueOf`
